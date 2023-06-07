@@ -11,21 +11,20 @@ struct VegetableListScreen: View {
     @StateObject private var vegetableListVM = VegetableListViewModel()
     
     var body: some View {
-        NavigationStack {
-            VStack {
-                List {
-                    ForEach(vegetableListVM.vegetables, id: \.id) { vegetable in
-                        VegetableCell(vegetable: vegetable)
-                            .background(Constants.Colors.lightGreyRowColor)
-                            .clipShape(RoundedRectangle(cornerRadius: 25, style: .continuous))
-                    }
+        VStack {
+            List {
+                ForEach(vegetableListVM.vegetables, id: \.id) { vegetable in
+                    VegetableCell(vegetable: vegetable)
+                        .background(Constants.Colors.lightGreyRowColor)
+                        .clipShape(RoundedRectangle(cornerRadius: 25, style: .continuous))
                 }
-                .listStyle(.plain)
-                .task {
-                    await vegetableListVM.getAll()
-                }
+                .listRowSeparator(.hidden)
             }
-            .navigationTitle("Green Garden")
+            .padding(.top)
+            .listStyle(.plain)
+            .task {
+                await vegetableListVM.getAll()
+            }
         }
     }
 }

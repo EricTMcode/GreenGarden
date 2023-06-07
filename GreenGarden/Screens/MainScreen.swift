@@ -9,18 +9,27 @@ import SwiftUI
 
 struct MainScreen: View {
     var body: some View {
-        TabView {
-            VegetableListScreen()
-                .tabItem {
-                    Label("Home", systemImage: "house")
+        NavigationStack {
+            TabView {
+                VegetableListScreen()
+                    .tabItem {
+                        Label("Home", systemImage: "house")
+                    }
+                
+                Text("Second Page")
+                    .tabItem {
+                        Label("My Garden", systemImage: "leaf")
+                    }
+            }
+            .tint(.teal)
+            .navigationTitle("Green Garden")
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Image(systemName: "leaf.fill")
+                        .foregroundColor(.white)
                 }
-            
-            Text("Second Page")
-                .tabItem {
-                    Label("My Garden", systemImage: "leaf")
-                }
+            }
         }
-        .tint(.teal)
     }
 }
 
