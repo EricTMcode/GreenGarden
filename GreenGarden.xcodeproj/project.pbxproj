@@ -14,6 +14,7 @@
 		073F6B742A30A2DB00DCF956 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073F6B732A30A2DB00DCF956 /* Constants.swift */; };
 		073F6B762A30A3C800DCF956 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073F6B752A30A3C800DCF956 /* Webservice.swift */; };
 		073F6B782A30A40F00DCF956 /* Vegetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073F6B772A30A40F00DCF956 /* Vegetable.swift */; };
+		073F6B7B2A30A6BA00DCF956 /* VegetableListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073F6B7A2A30A6BA00DCF956 /* VegetableListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,8 @@
 		073F6B732A30A2DB00DCF956 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		073F6B752A30A3C800DCF956 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		073F6B772A30A40F00DCF956 /* Vegetable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vegetable.swift; sourceTree = "<group>"; };
+		073F6B792A30A63A00DCF956 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		073F6B7A2A30A6BA00DCF956 /* VegetableListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegetableListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +60,7 @@
 		073F6B5F2A30A26700DCF956 /* GreenGarden */ = {
 			isa = PBXGroup;
 			children = (
+				073F6B792A30A63A00DCF956 /* Info.plist */,
 				073F6B722A30A2BE00DCF956 /* Utils */,
 				073F6B712A30A2AE00DCF956 /* ViewModels */,
 				073F6B702A30A2A900DCF956 /* Models */,
@@ -104,6 +108,7 @@
 		073F6B712A30A2AE00DCF956 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				073F6B7A2A30A6BA00DCF956 /* VegetableListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 			files = (
 				073F6B632A30A26700DCF956 /* ContentView.swift in Sources */,
 				073F6B612A30A26700DCF956 /* GreenGardenApp.swift in Sources */,
+				073F6B7B2A30A6BA00DCF956 /* VegetableListViewModel.swift in Sources */,
 				073F6B782A30A40F00DCF956 /* Vegetable.swift in Sources */,
 				073F6B762A30A3C800DCF956 /* Webservice.swift in Sources */,
 				073F6B742A30A2DB00DCF956 /* Constants.swift in Sources */,
@@ -322,6 +328,7 @@
 				DEVELOPMENT_TEAM = H7MDDDPC4H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GreenGarden/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -351,6 +358,7 @@
 				DEVELOPMENT_TEAM = H7MDDDPC4H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GreenGarden/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

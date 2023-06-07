@@ -14,6 +14,7 @@ enum NetworkError: Error {
 
 class webservice {
     func getAllVegetables(url: URL?) async throws -> [Vegetable] {
+        
         guard let url = url else {
             throw NetworkError.badUrl
         }
