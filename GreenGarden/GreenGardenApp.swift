@@ -11,7 +11,7 @@ import SwiftUI
 struct GreenGardenApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            VegetableListScreen()
         }
     }
 }
