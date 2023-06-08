@@ -40,13 +40,14 @@ struct VegetableDetailScreen: View {
                 
                 switch selection {
                 case .about:
-                    Text("About US")
+                    AboutUs(vegetable: vegetable)
                 case .companions:
                     Text("Companions")
                 case .problems:
                     Text("Problems")
                 }
             }
+            .navigationTitle(vegetable.name)
         }
     }
 }

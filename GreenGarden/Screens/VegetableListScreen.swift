@@ -17,15 +17,16 @@ struct VegetableListScreen: View {
                     NavigationLink {
                         VegetableDetailScreen(vegetable: vegetable)
                     } label: {
-                    VegetableCell(vegetable: vegetable)
-                        .background(Constants.Colors.lightGreyRowColor)
-                        .clipShape(RoundedRectangle(cornerRadius: 25, style: .continuous))
-                }
+                        VegetableCell(vegetable: vegetable)
+                            .background(Constants.Colors.lightGreyRowColor)
+                            .clipShape(RoundedRectangle(cornerRadius: 25, style: .continuous))
+                    }
                 }
                 .listRowSeparator(.hidden)
             }
             .padding(.top)
             .listStyle(.plain)
+            .navigationTitle("Green Garden")
             .task {
                 await vegetableListVM.getAll()
             }
@@ -37,6 +38,7 @@ struct VegetableListScreen_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
             VegetableListScreen()
+                .navigationTitle("Green Garden")
         }
     }
 }
