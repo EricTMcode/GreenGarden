@@ -23,6 +23,18 @@ struct AboutUs: View {
                 TwoColumnView(left: "Seed depth", right: vegetable.seedDepth)
                 TwoColumnView(left: "Germination soil temperature", right: vegetable.growingSoilTemperature)
             }
+            DescriptionView(heading: "Sowing", content: vegetable.sowingDescription)
+                .padding()
+                .background(Constants.Colors.lightGreyRowColor)
+                .clipShape(RoundedRectangle(cornerRadius: 25, style: .continuous))
+                .foregroundColor(.black)
+            
+            DescriptionView(heading: "Growing", content: vegetable.growingDescription)
+                .padding()
+                .background(Constants.Colors.lightBlueRowColor)
+                .clipShape(RoundedRectangle(cornerRadius: 25, style: .continuous))
+                .foregroundColor(.black)
+            
             Spacer()
         }
         .padding()

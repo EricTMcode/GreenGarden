@@ -19,6 +19,7 @@
 		073F6B842A30B9D300DCF956 /* VegetableDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073F6B832A30B9D300DCF956 /* VegetableDetailScreen.swift */; };
 		073F6B872A32056F00DCF956 /* AboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073F6B862A32056F00DCF956 /* AboutUs.swift */; };
 		073F6B892A3206A800DCF956 /* TwoColumnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073F6B882A3206A800DCF956 /* TwoColumnView.swift */; };
+		073F6B8B2A3207B700DCF956 /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073F6B8A2A3207B700DCF956 /* DescriptionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		073F6B832A30B9D300DCF956 /* VegetableDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegetableDetailScreen.swift; sourceTree = "<group>"; };
 		073F6B862A32056F00DCF956 /* AboutUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUs.swift; sourceTree = "<group>"; };
 		073F6B882A3206A800DCF956 /* TwoColumnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoColumnView.swift; sourceTree = "<group>"; };
+		073F6B8A2A3207B700DCF956 /* DescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				073F6B862A32056F00DCF956 /* AboutUs.swift */,
+				073F6B8A2A3207B700DCF956 /* DescriptionView.swift */,
 				073F6B882A3206A800DCF956 /* TwoColumnView.swift */,
 			);
 			path = Views;
@@ -218,6 +221,7 @@
 				073F6B7D2A30A8B900DCF956 /* VegetableListScreen.swift in Sources */,
 				073F6B892A3206A800DCF956 /* TwoColumnView.swift in Sources */,
 				073F6B7B2A30A6BA00DCF956 /* VegetableListViewModel.swift in Sources */,
+				073F6B8B2A3207B700DCF956 /* DescriptionView.swift in Sources */,
 				073F6B782A30A40F00DCF956 /* Vegetable.swift in Sources */,
 				073F6B762A30A3C800DCF956 /* Webservice.swift in Sources */,
 				073F6B742A30A2DB00DCF956 /* Constants.swift in Sources */,
