@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Vegetable: Codable {
+struct VegetableDTO: Codable {
     let vegetableId: Int
     let name: String
     let description: String
