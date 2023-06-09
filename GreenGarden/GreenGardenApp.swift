@@ -11,6 +11,8 @@ import SwiftUI
 struct GreenGardenApp: App {
     
     init() {
+       let _ = CoreDataManager.shared
+        
         setupTheme()
     }
     
@@ -34,3 +36,4 @@ struct GreenGardenApp: App {
         }
     }
 }
+ 
